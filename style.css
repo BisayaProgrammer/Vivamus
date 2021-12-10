@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Readex Pro', sans-serif;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* PAGE 1 CSS Start */
+
+/* HEADER CSS START */
+
+.header {
+    background: #2da8c9;
+    width: 100vw;
+}
+
+.header_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.logo_img img {
+    width: 8vw;
+}
+
+.header ul {
+    list-style: none;
+}
+
+.header ul li {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    border-left: 1px solid #fff;
+}
+
+.header ul li:first-child {
+    border-left: none;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.header .search_input {
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    background: none;
+    color: #fff;
+    padding: 0 0 0 10px;
+    background-image: url('assets/search_icon.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 30px;
+}
+
+/* HEADER CSS END */
+
+/* CONTENT CSS START */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #43c0e5;
+    position: relative;
+    height: 65vh;
+}
+
+.content .header_main {
+    width: 80vw;
+    margin: 0 auto;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+.content .header_main .brand_header {
+    display: block;
+    font-size: 36px;
+    margin: 20px 0 0 0;;
+}
+
+.content .header_main .brand_sub {
+    display: block;
+    font-size: 22px;
+    width: 45vw;
+    margin: 0 auto 30px auto;
+}
+
+.button_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vw;
+    align-items: center;
+    padding: 30px 0 0 0;
+    border-top: 3px solid #efefef;
+}
+
+.button_page::before {
+    content: "";
+    background: #bfbfbf;
+    width: 40%;
+    height: 10px;
+    position: absolute;
+    z-index: -100;
+}
+
+.button_page a{
+    color: #43c0e5;
+    background: #fff;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    border: 10px solid #bfbfbf;
+    text-decoration: none;
+}
+
+#btn_active {
+    color: #fff;
+    background: #43c0e5;
+}
+
+.form_page {
+    width: 40vw;
+    margin: 20px 0 0 0;
+    background: #ebebeb; 
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form_page form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form_page label, .form_page input {
+    display: block;
+    padding: 0 0 0 5px;
+}
+
+
+.form_page .top_form {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0 5px 0;
+}
+
+.form_page .top_form input {
+    width: 290px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form_page .bottom_form {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 5px auto 10px auto;
+}
+
+.form_page .bottom_form input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+
+.bottom_form div {
+    margin: 5px 0 5px 0;
+}
+
+.nxt_button {
+    position: absolute;
+    bottom: 0;
+    right: 30vw;
+    text-decoration: none;
+    background: #2da8c9;
+    padding: 10px 100px;
+    border-radius: 5px;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* CONTENT CSS END */
+
+/* FOOTER CSS START */
+
+.footer {
+    background: #cccccc;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px
+}
+
+.samp_circle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15vw;
+    margin: 0 auto;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+}
+
+.footer_links {
+    margin: 10px 0;
+}
+
+.footer .footer_links ul {
+    list-style: none;
+}
+
+.footer .footer_links ul li {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    border-left: 1px solid #fff;
+}
+
+.footer .footer_links ul li:first-child {
+    border-left: none;
+}
+
+.footer .footer_links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer .brand_credits {
+    font-size: 12px;
+    color: #fff;
+}
+
+/* FOOTER CSS END */
+
+/* PAGE 1 CSS End */
+
+/* PAGE 2 CSS Start */
+
+.form_page2 {
+    width: 40vw;
+    margin: 20px 0 0 0;
+    background: #ebebeb; 
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form_page2 form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 20px;
+}
+
+.form_page2 label, .form_page2 input {
+    display: block;
+    padding: 0 0 0 5px;
+}
+
+.form_page2 .p2_form input {
+    width: 80%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form_page2 .p2_form .donation input, .form_page2 .p2_form .securitycode input, .form_page2 .p2_form .expdate input {
+    width: 40%;
+}
+
+.nxt_button2 {
+    position: absolute;
+    bottom: -13vh;
+    right: 30vw;
+    text-decoration: none;
+    background: #2da8c9;
+    padding: 10px 100px;
+    border-radius: 5px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.bck_button2 {
+    position: absolute;
+    bottom: -13vh;
+    left: 30vw;
+    text-decoration: none;
+    background: #2da8c9;
+    padding: 10px 100px;
+    border-radius: 5px;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* PAGE 2 CSS END */
+
+/* PAGE 3 CSS Start */
+
+.comment_area {
+    width: 80%;
+    margin: 20px auto 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment_form {
+    /* width: 80%;
+    margin: 0 auto; */
+}
+
+.comment_form input {
+    width: 100%;
+    height: 15vh;
+    border: none;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.anonymous {
+    display: flex;
+    margin: 10px 0 0 0;
+}
+
+.anonymous input {
+    border: none;
+    border-radius: 10px;
+    width: 20px;
+}
+
+.nxt_button3 {
+    position: absolute;
+    bottom: -2vh;
+    right: 30vw;
+    text-decoration: none;
+    background: #2da8c9;
+    padding: 10px 100px;
+    border-radius: 5px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.bck_button3 {
+    position: absolute;
+    bottom: -2vh;
+    left: 30vw;
+    text-decoration: none;
+    background: #2da8c9;
+    padding: 10px 100px;
+    border-radius: 5px;
+    font-size: 24px;
+    color: #fff;
+}
+/* PAGE 3 CSS END */
